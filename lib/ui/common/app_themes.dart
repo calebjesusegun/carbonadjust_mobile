@@ -12,6 +12,8 @@ NB:
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import '../../extension/app_typography.dart';
+import '../../extension/color_palette.dart';
+import 'app_colors.dart';
 import 'app_text_styles.dart';
 
 class AppThemes {
@@ -19,42 +21,42 @@ class AppThemes {
   static ThemeData get lightTheme {
     return ThemeData(
       useMaterial3: true,
-      primaryColor: Colors.green,
+      primaryColor: AppColors.primary6,
       colorScheme: ColorScheme.fromSeed(
-          seedColor: Colors.green, brightness: Brightness.light),
+          seedColor: AppColors.primary6, brightness: Brightness.light),
       brightness: Brightness.light,
-      scaffoldBackgroundColor: Colors.white,
+      scaffoldBackgroundColor: AppColors.white,
       appBarTheme: const AppBarTheme(
-        backgroundColor: Colors.white,
+        backgroundColor: AppColors.white,
         elevation: 0,
         centerTitle: true,
         iconTheme: IconThemeData(color: Colors.black),
       ),
       textSelectionTheme:
-      const TextSelectionThemeData(cursorColor: Colors.green),
+      const TextSelectionThemeData(cursorColor: AppColors.primary6,),
       inputDecorationTheme: InputDecorationTheme(
         hintStyle: AppTextStyles.titleRegular16.copyWith(
-          color: Colors.grey,
+          color: AppColors.gray9,
         ),
         labelStyle: AppTextStyles.labelRegular12.copyWith(
-          color: Colors.grey,
+          color: AppColors.gray9,
         ),
         border: OutlineInputBorder(
           borderRadius: BorderRadius.circular(4.r),
-          borderSide: BorderSide(
-            color: Colors.grey.shade600,
+          borderSide: const BorderSide(
+            color: AppColors.gray6,
           ),
         ),
         focusedBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(4.r),
-          borderSide: BorderSide(
-            color: Colors.grey.shade600,
+          borderSide: const BorderSide(
+            color: AppColors.gray6,
           ),
         ),
         errorBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(4.r),
           borderSide: const BorderSide(
-            color: Colors.green,
+            color: AppColors.primary6,
           ),
         ),
       ),
@@ -69,6 +71,26 @@ class AppThemes {
           labelMedium16: AppTextStyles.labelMedium16,
           labelRegular14: AppTextStyles.labelRegular14,
           labelRegular16: AppTextStyles.labelRegular16,
+        ),
+        const Palette(
+          gray1: AppColors.gray1,
+          gray6: AppColors.gray6,
+          gray7: AppColors.gray7,
+          gray8: AppColors.gray8,
+          gray9: AppColors.gray9,
+          gray11: AppColors.gray11,
+          primary6: AppColors.primary6,
+          primary11: AppColors.primary11,
+          gray12: AppColors.gray12,
+          gray13: AppColors.grey13,
+          redShade: AppColors.redShade,
+          popUpBg: AppColors.popUpBg,
+          barrierColor: AppColors.barrierColor,
+          iconBackground2: AppColors.iconBackground2,
+          iconBackground3: AppColors.iconBackground3,
+          orangeShade: AppColors.orangeShade,
+          iconBackground: AppColors.iconBackground,
+          white: AppColors.white,
         ),
       ],
     );

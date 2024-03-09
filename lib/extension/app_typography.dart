@@ -39,6 +39,7 @@ class AppTypography extends ThemeExtension<AppTypography> {
   AppTypography copyWith({
     TextStyle? headlineBold28,
     TextStyle? headlineBold24,
+    TextStyle? headlineBold22,
     TextStyle? titleRegular16,
     TextStyle? titleBold16,
     TextStyle? labelRegular12,
