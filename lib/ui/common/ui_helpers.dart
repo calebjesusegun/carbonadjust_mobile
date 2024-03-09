@@ -1,12 +1,24 @@
-import 'dart:math';
+/*
+------------------------------------------------------------------------
+| UI HELPERS                     | For: Oaks Intelligence               |
+| ----------------------------------------------------------------------
+| By: Caleb Jesusegun            | Date: 09 - Mar - 2024                |
+| ----------------------------------------------------------------------
+| Modified by:                   | Comments:                            |
+------------------------------------------------------------------------
+NB:
+*/
 
+import 'dart:math';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 const double _tinySize = 5.0;
 const double _smallSize = 10.0;
 const double _mediumSize = 25.0;
 const double _largeSize = 50.0;
 const double _massiveSize = 120.0;
+double sidePadding = 16.w;
 
 const Widget horizontalSpaceTiny = SizedBox(width: _tinySize);
 const Widget horizontalSpaceSmall = SizedBox(width: _smallSize);
