@@ -6,7 +6,10 @@
 import 'dart:async' as _i5;
 import 'dart:ui' as _i6;
 
+import 'package:carbonadjust_mobile/data_model/event.dart' as _i8;
 import 'package:carbonadjust_mobile/services/event_service.dart' as _i7;
+import 'package:carbonadjust_mobile/services/secure_storage_service.dart'
+    as _i9;
 import 'package:flutter/material.dart' as _i4;
 import 'package:mockito/mockito.dart' as _i1;
 import 'package:mockito/src/dummies.dart' as _i3;
@@ -675,4 +678,125 @@ class MockDialogService extends _i1.Mock implements _i2.DialogService {
 /// A class which mocks [EventService].
 ///
 /// See the documentation for Mockito's code generation for more information.
-class MockEventService extends _i1.Mock implements _i7.EventService {}
+class MockEventService extends _i1.Mock implements _i7.EventService {
+  @override
+  int get listenersCount => (super.noSuchMethod(
+        Invocation.getter(#listenersCount),
+        returnValue: 0,
+        returnValueForMissingStub: 0,
+      ) as int);
+
+  @override
+  void addEvent(_i8.Event? event) => super.noSuchMethod(
+        Invocation.method(
+          #addEvent,
+          [event],
+        ),
+        returnValueForMissingStub: null,
+      );
+
+  @override
+  void listenToReactiveValues(List<dynamic>? reactiveValues) =>
+      super.noSuchMethod(
+        Invocation.method(
+          #listenToReactiveValues,
+          [reactiveValues],
+        ),
+        returnValueForMissingStub: null,
+      );
+
+  @override
+  void addListener(void Function()? listener) => super.noSuchMethod(
+        Invocation.method(
+          #addListener,
+          [listener],
+        ),
+        returnValueForMissingStub: null,
+      );
+
+  @override
+  void removeListener(void Function()? listener) => super.noSuchMethod(
+        Invocation.method(
+          #removeListener,
+          [listener],
+        ),
+        returnValueForMissingStub: null,
+      );
+
+  @override
+  void notifyListeners() => super.noSuchMethod(
+        Invocation.method(
+          #notifyListeners,
+          [],
+        ),
+        returnValueForMissingStub: null,
+      );
+}
+
+/// A class which mocks [SecureStorageService].
+///
+/// See the documentation for Mockito's code generation for more information.
+class MockSecureStorageService extends _i1.Mock
+    implements _i9.SecureStorageService {
+  @override
+  _i5.Future<void> deleteAccessToken() => (super.noSuchMethod(
+        Invocation.method(
+          #deleteAccessToken,
+          [],
+        ),
+        returnValue: _i5.Future<void>.value(),
+        returnValueForMissingStub: _i5.Future<void>.value(),
+      ) as _i5.Future<void>);
+
+  @override
+  _i5.Future<void> deleteRefreshToken() => (super.noSuchMethod(
+        Invocation.method(
+          #deleteRefreshToken,
+          [],
+        ),
+        returnValue: _i5.Future<void>.value(),
+        returnValueForMissingStub: _i5.Future<void>.value(),
+      ) as _i5.Future<void>);
+
+  @override
+  _i5.Future<String?> readAccessToken() => (super.noSuchMethod(
+        Invocation.method(
+          #readAccessToken,
+          [],
+        ),
+        returnValue: _i5.Future<String?>.value(),
+        returnValueForMissingStub: _i5.Future<String?>.value(),
+      ) as _i5.Future<String?>);
+
+  @override
+  _i5.Future<String?> readRefreshToken() => (super.noSuchMethod(
+        Invocation.method(
+          #readRefreshToken,
+          [],
+        ),
+        returnValue: _i5.Future<String?>.value(),
+        returnValueForMissingStub: _i5.Future<String?>.value(),
+      ) as _i5.Future<String?>);
+
+  @override
+  _i5.Future<void> writeAccessToken({String? token}) => (super.noSuchMethod(
+        Invocation.method(
+          #writeAccessToken,
+          [],
+          {#token: token},
+        ),
+        returnValue: _i5.Future<void>.value(),
+        returnValueForMissingStub: _i5.Future<void>.value(),
+      ) as _i5.Future<void>);
+
+  @override
+  _i5.Future<void> writeRefreshToken({String? token}) => (super.noSuchMethod(
+        Invocation.method(
+          #writeRefreshToken,
+          [],
+          {#token: token},
+        ),
+        returnValue: _i5.Future<void>.value(),
+        returnValueForMissingStub: _i5.Future<void>.value(),
+      ) as _i5.Future<void>);
+}

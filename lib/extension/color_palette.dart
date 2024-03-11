@@ -4,23 +4,23 @@ import 'package:flutter/material.dart';
 class Palette extends ThemeExtension<Palette> {
   const Palette(
       {required this.gray1,
-        required this.gray6,
-        required this.gray7,
-        required this.gray8,
-        required this.gray9,
-        required this.gray11,
-        required this.primary6,
-        required this.primary11,
-        required this.gray12,
-        required this.gray13,
-        required this.redShade,
-        required this.popUpBg,
-        required this.orangeShade,
-        required this.barrierColor,
-        required this.iconBackground2,
-        required this.iconBackground3,
-        required this.iconBackground,
-        required this.white});
+      required this.gray6,
+      required this.gray7,
+      required this.gray8,
+      required this.gray9,
+      required this.gray11,
+      required this.primary6,
+      required this.primary11,
+      required this.gray12,
+      required this.gray13,
+      required this.redShade,
+      required this.popUpBg,
+      required this.orangeShade,
+      required this.barrierColor,
+      required this.iconBackground2,
+      required this.iconBackground3,
+      required this.iconBackground,
+      required this.white});
 
   final Color? gray8;
   final Color? gray1;
