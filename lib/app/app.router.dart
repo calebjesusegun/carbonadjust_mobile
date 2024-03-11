@@ -7,15 +7,14 @@
 // ignore_for_file: no_leading_underscores_for_library_prefixes
 import 'package:carbonadjust_mobile/ui/views/home/home_view.dart' as _i2;
 import 'package:carbonadjust_mobile/ui/views/startup/startup_view.dart' as _i3;
-import 'package:flutter/material.dart' as _i4;
 import 'package:flutter/material.dart';
 import 'package:stacked/stacked.dart' as _i1;
-import 'package:stacked_services/stacked_services.dart' as _i5;
+import 'package:stacked_services/stacked_services.dart' as _i4;
 
 class Routes {
   static const homeView = '/home-view';
 
-  static const startupView = '/startup-view';
+  static const startupView = '/';
 
   static const all = <String>{
     homeView,
@@ -37,13 +36,13 @@ class StackedRouter extends _i1.RouterBase {
 
   final _pagesMap = <Type, _i1.StackedRouteFactory>{
     _i2.HomeView: (data) {
-      return _i4.MaterialPageRoute<dynamic>(
+      return _i1.buildAdaptivePageRoute<dynamic>(
         builder: (context) => const _i2.HomeView(),
         settings: data,
       );
     },
     _i3.StartupView: (data) {
-      return _i4.MaterialPageRoute<dynamic>(
+      return _i1.buildAdaptivePageRoute<dynamic>(
         builder: (context) => const _i3.StartupView(),
         settings: data,
       );
@@ -57,7 +56,7 @@ class StackedRouter extends _i1.RouterBase {
   Map<Type, _i1.StackedRouteFactory> get pagesMap => _pagesMap;
 }
 
-extension NavigatorStateExtension on _i5.NavigationService {
+extension NavigatorStateExtension on _i4.NavigationService {
   Future<dynamic> navigateToHomeView([
     int? routerId,
     bool preventDuplicates = true,

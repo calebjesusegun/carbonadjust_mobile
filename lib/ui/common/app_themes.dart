@@ -32,8 +32,9 @@ class AppThemes {
         centerTitle: true,
         iconTheme: IconThemeData(color: Colors.black),
       ),
-      textSelectionTheme:
-      const TextSelectionThemeData(cursorColor: AppColors.primary6,),
+      textSelectionTheme: const TextSelectionThemeData(
+        cursorColor: AppColors.primary6,
+      ),
       inputDecorationTheme: InputDecorationTheme(
         hintStyle: AppTextStyles.titleRegular16.copyWith(
           color: AppColors.gray9,
