@@ -6,6 +6,7 @@ import 'package:stacked/stacked_annotations.dart';
 import 'package:stacked_services/stacked_services.dart';
 import '../services/event_service.dart';
 import 'package:carbonadjust_mobile/services/secure_storage_service.dart';
+import 'package:carbonadjust_mobile/services/dio_service.dart';
 // @stacked-import
 
 @StackedApp(
@@ -20,6 +21,7 @@ import 'package:carbonadjust_mobile/services/secure_storage_service.dart';
     LazySingleton(classType: NavigationService),
     LazySingleton(classType: EventService),
     LazySingleton(classType: SecureStorageService),
+    LazySingleton(classType: DioService),
 // @stacked-service
   ],
   bottomsheets: [

@@ -1,4 +1,11 @@
 {
     "@@locale": "en",
-    "hello_word": "Hello World"
+    "no_internet": "No Internet Connection. Please try again later",
+    "connection_timeout": "No Internet Connection. It seems like the connection timed out",
+    "service_unavailable": "Service Unavailable",
+    "unknown_error": "Unknown Error",
+    "connection_error": "Seems like we got a problem connecting to the server. Kindly try again when you have a stronger network",
+    "email_cannot_be_empty": "Email cannot be empty",
+    "email_must_be_a_valid_email": "Email must be a valid email address",
+    "required": "Required"
 }

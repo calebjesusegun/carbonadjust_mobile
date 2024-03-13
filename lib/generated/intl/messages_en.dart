@@ -22,6 +22,19 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
-        "hello_word": MessageLookupByLibrary.simpleMessage("Hello World")
+        "connection_error": MessageLookupByLibrary.simpleMessage(
+            "Seems like we got a problem connecting to the server. Kindly try again when you have a stronger network"),
+        "connection_timeout": MessageLookupByLibrary.simpleMessage(
+            "No Internet Connection. It seems like the connection timed out"),
+        "email_cannot_be_empty":
+            MessageLookupByLibrary.simpleMessage("Email cannot be empty"),
+        "email_must_be_a_valid_email": MessageLookupByLibrary.simpleMessage(
+            "Email must be a valid email address"),
+        "no_internet": MessageLookupByLibrary.simpleMessage(
+            "No Internet Connection. Please try again later"),
+        "required": MessageLookupByLibrary.simpleMessage("Required"),
+        "service_unavailable":
+            MessageLookupByLibrary.simpleMessage("Service Unavailable"),
+        "unknown_error": MessageLookupByLibrary.simpleMessage("Unknown Error")
       };
 }
