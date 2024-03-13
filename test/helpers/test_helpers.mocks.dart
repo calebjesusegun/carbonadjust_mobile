@@ -7,6 +7,7 @@ import 'dart:async' as _i5;
 import 'dart:ui' as _i6;
 
 import 'package:carbonadjust_mobile/data_model/event.dart' as _i8;
+import 'package:carbonadjust_mobile/services/dio_service.dart' as _i10;
 import 'package:carbonadjust_mobile/services/event_service.dart' as _i7;
 import 'package:carbonadjust_mobile/services/secure_storage_service.dart'
     as _i9;
@@ -800,3 +801,8 @@ class MockSecureStorageService extends _i1.Mock
         returnValueForMissingStub: _i5.Future<void>.value(),
       ) as _i5.Future<void>);
 }
+
+/// A class which mocks [DioService].
+///
+/// See the documentation for Mockito's code generation for more information.
+class MockDioService extends _i1.Mock implements _i10.DioService {}

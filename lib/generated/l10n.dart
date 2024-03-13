@@ -50,11 +50,81 @@ class S {
     return Localizations.of<S>(context, S);
   }
 
-  /// `Hello World`
-  String get hello_word {
+  /// `No Internet Connection. Please try again later`
+  String get no_internet {
     return Intl.message(
-      'Hello World',
-      name: 'hello_word',
+      'No Internet Connection. Please try again later',
+      name: 'no_internet',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `No Internet Connection. It seems like the connection timed out`
+  String get connection_timeout {
+    return Intl.message(
+      'No Internet Connection. It seems like the connection timed out',
+      name: 'connection_timeout',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Service Unavailable`
+  String get service_unavailable {
+    return Intl.message(
+      'Service Unavailable',
+      name: 'service_unavailable',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Unknown Error`
+  String get unknown_error {
+    return Intl.message(
+      'Unknown Error',
+      name: 'unknown_error',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Seems like we got a problem connecting to the server. Kindly try again when you have a stronger network`
+  String get connection_error {
+    return Intl.message(
+      'Seems like we got a problem connecting to the server. Kindly try again when you have a stronger network',
+      name: 'connection_error',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Email cannot be empty`
+  String get email_cannot_be_empty {
+    return Intl.message(
+      'Email cannot be empty',
+      name: 'email_cannot_be_empty',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Email must be a valid email address`
+  String get email_must_be_a_valid_email {
+    return Intl.message(
+      'Email must be a valid email address',
+      name: 'email_must_be_a_valid_email',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Required`
+  String get required {
+    return Intl.message(
+      'Required',
+      name: 'required',
       desc: '',
       args: [],
     );
